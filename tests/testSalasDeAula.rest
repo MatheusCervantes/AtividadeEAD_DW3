@@ -1,0 +1,50 @@
+### Teste de API para GetAllSalasDeAula
+GET http://localhost:40000/GetAllSalasDeAula
+Content-Type: application/json
+
+###
+
+### Teste de API para GetSalasDeAulaByID
+POST http://localhost:40000/GetSalasDeAulaByID
+Content-Type: application/json
+
+{
+  "salasdeaulaid": 1
+}
+
+###
+
+### Teste de API para InsertSalasDeAula
+POST http://localhost:40000/InsertSalasDeAula
+Content-Type: application/json
+
+{
+  "descricao": "Sala 104",
+  "localizacao": "Bloco A",
+  "capacidade": 30,
+  "removido": false
+}
+
+###
+
+### Teste de API para UpdateSalasDeAula
+POST http://localhost:40000/UpdateSalasDeAula
+Content-Type: application/json
+
+{
+  "salasdeaulaid": 1,
+  "descricao": "Sala 100",
+  "localizacao": "Bloco B",
+  "capacidade": 50,
+  "removido": false
+}
+
+###
+
+### Teste de API para DeleteSalasDeAula
+POST http://localhost:40000/DeleteSalasDeAula
+Content-Type: application/json
+
+{
+  "salasdeaulaid": 1
+}
