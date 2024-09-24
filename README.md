@@ -36,13 +36,25 @@ npm install
 
 Siga os passos abaixo para configurar o banco de dados PostgreSQL:
 
-1. Crie um banco de dados PostgreSQL. Utilize o arquivo `databaseconfig.sql` localizado na raiz do projeto para criar automaticamente o banco e as tabelas necessárias.
+1. **Acessar o PostgreSQL**:
    
-2. No terminal, execute o seguinte comando dentro do diretório do projeto para configurar o banco:
+   No terminal, entre no PostgreSQL com o comando:
 
-```bash
-psql -U seu_usuario -d sua_base_de_dados -f databaseconfig.sql
-```
+   ```bash
+   psql -U seu_usuario -h localhost
+   ```
+
+   Substitua `seu_usuario` pelo seu usuário PostgreSQL.
+
+2. **Criar o Banco de Dados e Tabelas**:
+
+   Dentro do PostgreSQL, use o comando abaixo para rodar o arquivo `databaseconfig.sql` e criar o banco de dados e suas tabelas:
+
+   ```bash
+   \i caminho_para_o_arquivo/databaseconfig.sql
+   ```
+
+   Certifique-se de fornecer o caminho correto para o arquivo `databaseconfig.sql`, que está localizado na raiz do projeto.
 
 3. Atualize o arquivo `.env` com as credenciais do seu banco de dados, por exemplo:
 
