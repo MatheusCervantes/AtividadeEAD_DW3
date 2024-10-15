@@ -63,7 +63,7 @@ DB_HOST=localhost
 DB_PORT=5432
 DB_NAME=sistema_academico
 DB_USER=seu_usuario
-DB_PASSWORD=sua_senha
+DB_PASS=sua_senha
 ```
 
 ### 4. Rodar o Sistema
